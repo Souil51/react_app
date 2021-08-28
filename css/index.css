@@ -1,0 +1,181 @@
+.element-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.list-container{
+    width: 100%;
+}
+
+.loading-container{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color : white;
+}
+
+.loading-container button{
+    color : white;
+    background: transparent;
+    border: none;
+}
+
+.loading-container button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.list-item{
+    width: calc(100% - 20px);
+    color : white;
+    border-bottom: 2px solid #38444D;
+    padding : 10px;
+    transition: 0.15s;
+
+    display: flex;
+}
+
+.list-item:hover{
+    background-color:  #1C2732;
+}
+
+.lateral{
+    width : 80px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.item-inner{
+    width: 90%;;
+}
+
+.inner-banner .pseudo{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.inner-banner .pseudo:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.inner-banner .identifiant{
+    color:lightgray;
+    font-size: 0.9em;
+}
+
+.inner-banner .date{
+    color : lightgray;
+    font-size: 0.9em;
+}
+
+.inner-banner{
+    height: 30px;
+}
+
+.image-profil{
+    border-radius: 25px;;
+}
+
+.inner-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding : 10px 10px 0px 10px;
+    margin-top: 5px;
+}
+
+.btn-1, .btn-2{
+    flex-basis: 40%;
+    cursor: pointer;
+
+    background-color: #162D40;
+    padding : 8px 16px 8px 0px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    color : white;
+    font-size: 1.1em;
+    transition: 0.25s;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-1:hover, .btn-1.btnSelected{
+    background-color: #0e7751;
+}
+
+.btn-2:hover, .btn-2.btnSelected{
+    background-color : #881c1c;
+}
+
+.btn-1.btnSelected .count, 
+.btn-2.btnSelected .count,
+.btn-1:hover .count,
+.btn-2:hover .count{
+    color : #c5c5c5;
+}
+
+.btn-1.btnSelected:hover{
+    background-color: #3f7b66;
+}
+
+.btn-2.btnSelected:hover{
+    background-color: #843b3b;
+}
+
+.btn-icon{
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.count{
+    color : gray;
+    font-size: 0.8em;
+    vertical-align: text-top;
+    transition: 0.25s;
+    margin-left: 7px;
+    margin-top: 2px;
+}
+
+.filter-banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    border-bottom: 2px solid var(--main-border-color);
+    position: sticky;
+    top : 110px;
+    background-color: var(--main-background-color);
+    z-index: 12px;
+}
+
+.filter-button{
+    background-color: transparent;
+    border : 0;
+    color : white;
+    cursor: pointer;
+    height: 40px;
+    min-width: 130px;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.filter-button-selected, .filter-button:hover{
+    background-color: var(--menu-background-hover);
+    border-radius: 10px;
+    color : var(--menu-color-hover);
+}
+
+.filter-button-selected:hover{
+   background-color: #12283a;
+}
